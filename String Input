@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class App {
+    public static void main(String[] args) throws Exception {
+        Scanner a = new Scanner(System.in);
+        String[] arr = new String[5];
+
+        for (int i = 0; i < 5; i++) {
+            arr[i] = a.nextLine();
+        }
+        for (int i = 0; i < 5; i++) {
+            System.out.println(arr[i]);
+        }
+
+        a.close();
+    }
+}
