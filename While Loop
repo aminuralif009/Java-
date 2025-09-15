@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class App {
+    public static void main(String[] args) throws Exception {
+        Scanner a = new Scanner(System.in);
+        
+       int x = a.nextInt();
+       while(x-- > 0){
+        int n = a.nextInt();
+        System.out.print(n+" ");
+       }
+
+        a.close();
+    }
+}
