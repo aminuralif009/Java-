@@ -1,0 +1,21 @@
+import java.util.Scanner;
+import java.util.Arrays;
+
+public class App {
+    public static void main(String[] args) throws Exception {
+        Scanner a = new Scanner(System.in);
+        System.out.print("Size of Element: ");
+        int x = a.nextInt();
+        int[] arr = new int[x];
+        System.out.print("Enter Element: ");
+        for (int i = 0; i < x; i++) {
+            arr[i] = a.nextInt();
+        }
+        Arrays.sort(arr);
+        System.out.print("Sortin Element: ");
+        for (int i = 0; i < x; i++) {
+            System.out.print(arr[i] + " ");
+        }
+        a.close();
+    }
+}
