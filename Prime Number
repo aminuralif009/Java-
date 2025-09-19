@@ -1,0 +1,37 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+import java.util.Scanner;
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+	    Scanner input = new Scanner(System.in);
+	    
+	    System.out.print("Input: ");
+	    
+	    int a = input.nextInt();
+	    System.out.print("Output: ");
+	     boolean isPrime = true;
+	    if(a<=1){
+	       isPrime = false;
+	    }else{
+	       
+	        for(int i = 2;i*i<=a;i++){
+	           if(a%i == 0){
+	               isPrime = false;
+	               break;
+	           }
+	        }
+	    }
+	   if(isPrime){
+	       System.out.println("Prime");
+	   }else{
+	       System.out.println("Not Prime");
+	   }
+		 
+		input.close();
+
+	}
+}
